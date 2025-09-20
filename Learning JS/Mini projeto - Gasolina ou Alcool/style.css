@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-/* Estilos gerais para a página */
 body {
     font-family: 'Nunito', sans-serif;
     background-color: #f0f2f5;
@@ -11,7 +10,6 @@ body {
     margin: 0;
 }
 
-/* Container principal da aplicação */
 .container {
     background-color: #ffffff;
     padding: 40px; 
@@ -40,7 +38,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* Estilo para os labels e inputs */
 label {
     font-weight: 700; 
     color: #33525C; 
@@ -57,14 +54,12 @@ input {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Efeito visual quando o usuário clica no input */
 input:focus {
     outline: none;
     border-color: #0EABDB;
     box-shadow: 0 0 8px rgba(14, 171, 219, 0.4);
 }
 
-/* Estilo para o botão */
 button {
     width: 100%;
     padding: 15px;
@@ -78,13 +73,11 @@ button {
     transition: transform 0.2s, background-color 0.3s;
 }
 
-/* Efeito "pop" quando o mouse passa por cima do botão */
 button:hover {
     background-color: #c96a0b; 
     transform: scale(1.03);
 }
 
-/* Estilo para a área de resultado */
 #resultado {
     margin-top: 25px;
     font-size: 18px;
@@ -93,7 +86,6 @@ button:hover {
     border-radius: 12px; 
 }
 
-/* Classes que serão adicionadas via JavaScript */
 .resultado-verde { 
     background-color: #e7f6fd;
     color: #0EABDB;

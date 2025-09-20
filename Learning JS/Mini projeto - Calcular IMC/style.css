@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* 1. Paleta de Cores Presetadas */
+  --cor-background: #F5F5F5;
+  --cor-white: #ffff;
+  --cor-primaria: #af3061;
+  --cor-primaria-hover: #631b37;
+  --cor-secundaria: #18461c;
+  --cor-terciaria: #cac5be;
+  --cor-sucesso: #198754; 
+  --cor-perigo: #dc3545;   
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--cor-background);
+
+}
+
+h1.header{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--cor-secundaria);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 2.5rem; 
+    gap: 1rem;
+    border-radius: 1.5rem;
+    background-color: var(--cor-white);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.input_peso, .input_altura{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+label {
+    font-weight: 700; 
+    color: var(--cor-secundaria); 
+    text-align: left;
+    font-size: 1rem;
+}
+
+.input_peso input, .input_altura input{
+    padding: .8rem;
+    border-radius: .5rem;
+    border: 1px rgb(189, 189, 189) solid;
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+}
+
+input:focus {
+    outline: none;
+    border-color: #c0e7c3;
+    box-shadow: 0 0 5px #59845c;
+}
+
+.botao_primario{
+    padding: .8rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: var(--cor-primaria);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--cor-white);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+
+
+}
+
+.botao_primario:hover {
+    background-color: var(--cor-primaria-hover); 
+    transform: scale(1.03);
+}
+
+.resultado{
+    text-align: center;
+    color: var(--cor-secundaria);
+}
+
+
+.resultado_verde { 
+    background-color: rgba(36, 142, 36, 0.332);
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px;
+    border-radius: 12px; 
+}
+
+.line{
+    margin: 1rem 0;
+    color: white;
+    border-style: inset;
+}
+
