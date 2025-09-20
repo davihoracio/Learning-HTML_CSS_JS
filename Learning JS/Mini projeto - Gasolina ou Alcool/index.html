@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álcool ou Gasolina?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1 class="titulo">Álcool ou Gasolina?</h1>
+        <p class="subtitulo">Descubra qual combustível é mais vantajoso</p>
+
+        <div class="campos-formulario">
+            <label for="alcool">Preço do Álcool (por litro):</label>
+            <input type="number" id="alcool" placeholder="ex: 3.90" step="0.01">
+
+            <label for="gasolina">Preço da Gasolina (por litro):</label>
+            <input type="number" id="gasolina" placeholder="ex: 5.50" step="0.01">
+        </div>
+
+        <button id="botao-calcular">Calcular</button>
+
+        <div id="resultado"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
